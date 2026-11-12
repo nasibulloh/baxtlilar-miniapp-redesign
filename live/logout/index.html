@@ -1,0 +1,6 @@
+<!doctype html><html lang="uz"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chiqish animatsiyalari</title>
+<style>:root{--bg:#f6f3ff;--card:#fff;--ink:#241c33}body{margin:0;font:14px system-ui,sans-serif;background:var(--bg);color:var(--ink)}h1{font-size:18px;margin:16px}p{margin:0 16px 12px;color:#6b6380}.g{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px;padding:0 16px 24px}.c{background:var(--card);border-radius:14px;padding:6px;box-shadow:0 1px 3px rgba(36,28,51,.08)}.c div{aspect-ratio:1}.c b{display:block;font-size:12px;padding:4px 4px 2px;word-break:break-all}</style></head><body>
+<h1>Chiqish (log out) uchun animatsiyalar</h1><p>LottieFiles'dagi bepul variantlar, hammasi harakatda. Tanlaganingizning nomini yozing.</p><div class="g" id="g"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie_light.min.js"></script>
+<script>fetch('list.json').then(r=>r.json()).then(list=>{const g=document.getElementById('g');list.forEach(n=>{const c=document.createElement('div');c.className='c';const d=document.createElement('div');const b=document.createElement('b');b.textContent=n;c.append(d,b);g.append(c);lottie.loadAnimation({container:d,renderer:'svg',loop:true,autoplay:true,path:n+'.json'});});});</script>
+</body></html>
